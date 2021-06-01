@@ -1,12 +1,13 @@
 #ifndef FRACCION_H
 #define FRACCION_H
 
-
-class fraccion
+class fraccion //Clase fraccion 
 {
-    public:
+    public: //Atributos de la clase fraccion 
         int numerador;
         int denominador;
+
+    public: //Constructores de la clase fraccion 
         fraccion();
         fraccion(int, int);
         fraccion operator + (fraccion);
