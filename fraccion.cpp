@@ -1,4 +1,4 @@
-#include "fraccion.h"
+#include "fraccion.h" //Se incluye fraccion.h
 #include <iostream>
 
 using namespace std;
