@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 fraccion::fraccion()
 {
     numerador = 0;
