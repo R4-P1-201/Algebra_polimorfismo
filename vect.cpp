@@ -1,5 +1,4 @@
 #include "vect.h"
-#include "Fraccion.h"
 #include <iostream>
 using namespace std;
 
