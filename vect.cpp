@@ -22,21 +22,21 @@ void vect::setComponentes(int i, fraccion f1){
 
 vect vect::operator + (vect v2){
     vect vres(tam);
-    for (int i = 0; i < tam; i++){
+    for (int i = 0; i <= tam; i++){
         vres.setComponentes(i,this->componentes[i].suma(v2.componentes[i]));
     }
     return vres;
 }
 vect vect::operator - (vect v2){
     vect vres(tam);
-    for (int i = 0; i < tam; i++){
+    for (int i = 0; i <= tam; i++){
         vres.setComponentes(i,this->componentes[i].resta(v2.componentes[i]));
     }
     return vres;
 }
 fraccion vect::operator * (vect v2){
     fraccion res;
-    for (int i = 0; i < tam; i++){
+    for (int i = 0; i <= tam; i++){
        res = res.suma(this->componentes[i].multiplicacion(v2.componentes[i]));
     }
     return res;
@@ -44,16 +44,18 @@ fraccion vect::operator * (vect v2){
 
 vect vect::producto(vect v2){
     vect vres(tam);
-    if (tam == 3 && v2.tam == 3)
-    for (int i = 0; i < tam; i++){
-        //producto cruz
-        //vres.setComponentes(1,);
+    if (tam == 2 && v2.tam == 2)
+    for (int i = 0; i <= tam; i++){
+        vres.setComponentes(0,((componentes[1].multiplicacion(v2.componentes[2])).resta(componentes[1].multiplicacion(v2.componentes[2]))));
+        vres.setComponentes(1,((componentes[0].multiplicacion(v2.componentes[2])).resta(componentes[1].multiplicacion(v2.componentes[2]))));
+        vres.setComponentes(2,((componentes[0].multiplicacion(v2.componentes[1])).resta(componentes[0].multiplicacion(v2.componentes[1]))));
     }
+    vres.componentes[1].numerador = -vres.componentes[1].numerador;
     return vres;
 }
 
 void vect::print(){
-    for (int i = 0; i < tam; i++){
+    for (int i = 0; i <= tam; i++){
         int num = componentes[i].numerador;
         int den = componentes[i].denominador;
         cout << num << "/" << den << endl;
