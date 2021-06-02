@@ -1,19 +1,19 @@
-#include "fraccion.h" //Se incluye fraccion.h
+#include "fraccion.h"
 #include <iostream>
 
 using namespace std;
 
+
 fraccion::fraccion()
 {
-    numerador = 0; 
+    numerador = 0;
     denominador = 1;
 }
 
 fraccion::fraccion(int num,int den)
 {
-    if(den == 0){
+    if(den == 0)
         den = 1;
-    }
 
     if(den < 0 ){
         num = -num;
@@ -24,31 +24,26 @@ fraccion::fraccion(int num,int den)
     denominador = den;
 }
 
-fraccion fraccion::operator + (fraccion obj)
-{
+fraccion fraccion::operator + (fraccion obj){
     return this->suma(obj);
 }
 
-fraccion fraccion::operator * (fraccion obj)
-{
+fraccion fraccion::operator * (fraccion obj){
     return this->multiplicacion(obj);
 }
 
-fraccion fraccion::operator - (fraccion obj)
-{
+fraccion fraccion::operator - (fraccion obj){
     fraccion ftemp (-1,1);
     obj = obj.multiplicacion(ftemp);
     return suma(obj);
 }
 
-fraccion fraccion::operator / (fraccion obj)
-{
+fraccion fraccion::operator / (fraccion obj){
     fraccion ftemp (obj.denominador,obj.numerador);
     return this->multiplicacion(ftemp);
 }
 
-void fraccion::reduccion(int &num, int &den)
-{
+void fraccion::reduccion(int &num, int &den){
     int limit = 0;
     int s1 = 1;
     int s2 = 1;
@@ -78,37 +73,40 @@ void fraccion::reduccion(int &num, int &den)
     den = den*s2;
 }
 
-fraccion fraccion::suma(fraccion f2)
-{
+fraccion fraccion::suma(fraccion f2){
     int num = numerador * f2.getDenominador() +  denominador * f2.getNumerador();
     int den = denominador * f2.getDenominador();
     fraccion fres(num,den);
     return fres;
 }
 
-fraccion fraccion::multiplicacion(fraccion f2)
-{
+fraccion fraccion::resta(fraccion f2){
+    int num = numerador * f2.getDenominador() -  denominador * f2.getNumerador();
+    int den = denominador * f2.getDenominador();
+    fraccion fres(num,den);
+    return fres;
+}
+
+fraccion fraccion::multiplicacion(fraccion f2){
     int num = numerador * f2.getNumerador();
     int den = denominador * f2.getDenominador();
     fraccion fres(num,den);
     return fres;
 }
 
-void fraccion::imprimir()
-{
+void fraccion::imprimir(){
     cout << numerador << "/" << denominador << endl;
 }
 
-int fraccion::getNumerador()
-{
+int fraccion::getNumerador(){
     return numerador;
-}
+    }
 int fraccion::getDenominador(){
     return denominador;
-}
+    }
 void fraccion::setNumerador(int num){
     this->numerador = num;
-}
+    }
 void fraccion::setDenominador(int den){
     denominador = den;
-}
+    }
