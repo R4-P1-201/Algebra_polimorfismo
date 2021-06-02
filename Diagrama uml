@@ -1,38 +1,38 @@
-<mxfile host="app.diagrams.net" modified="2021-06-02T01:37:55.702Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="1y0RUNrDKgki8b4HULfK" version="14.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-02T01:42:58.989Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="ZRyhjJZmHQEdAM3BYj7X" version="14.7.3" type="github">
   <diagram id="QBnMyysT-FKPz_0X1W_h" name="Page-1">
-    <mxGraphModel dx="565" dy="688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="800" dy="975" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="N_oGtRxf-iCy7ptA4HqI-2" value="Fraccion" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="260" y="240" width="280" height="190" as="geometry" />
+          <mxGeometry x="250" y="40" width="310" height="360" as="geometry" />
         </mxCell>
         <mxCell id="N_oGtRxf-iCy7ptA4HqI-3" value="numerador int&#xa;denominador int" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="N_oGtRxf-iCy7ptA4HqI-2" vertex="1">
-          <mxGeometry y="26" width="280" height="54" as="geometry" />
+          <mxGeometry y="26" width="310" height="54" as="geometry" />
         </mxCell>
         <mxCell id="N_oGtRxf-iCy7ptA4HqI-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="N_oGtRxf-iCy7ptA4HqI-2" vertex="1">
-          <mxGeometry y="80" width="280" height="8" as="geometry" />
+          <mxGeometry y="80" width="310" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="N_oGtRxf-iCy7ptA4HqI-5" value="+ fraccion(): fraccion&#xa;+ get_numerador: int&#xa;+ get_denominador: int&#xa;&#xa;+ set_numerador(int): void&#xa;+ set_denominador(int): void" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="N_oGtRxf-iCy7ptA4HqI-2" vertex="1">
-          <mxGeometry y="88" width="280" height="102" as="geometry" />
+        <mxCell id="N_oGtRxf-iCy7ptA4HqI-5" value="+ fraccion(): fraccion&#xa;+ imprimir(): void&#xa;+ operator +(fraccion): fraccion&#xa;+ operator *(fraccion): fraccion&#xa;+ operator -(fraccion): fraccion&#xa;+ operator /(fraccion): fraccion&#xa;&#xa;+ reduccion(int,int): void&#xa;&#xa;+ suma(fraccion): fraccion&#xa;+ resta(fraccion): fraccion&#xa;+ multiplicacion(fraccion): fraccion&#xa;&#xa;+ get_numerador: int&#xa;+ get_denominador: int&#xa;&#xa;+ set_numerador(int): void&#xa;+ set_denominador(int): void" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="N_oGtRxf-iCy7ptA4HqI-2" vertex="1">
+          <mxGeometry y="88" width="310" height="272" as="geometry" />
         </mxCell>
         <mxCell id="N_oGtRxf-iCy7ptA4HqI-6" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="N_oGtRxf-iCy7ptA4HqI-7" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="404.5" y="510" as="sourcePoint" />
-            <mxPoint x="404.5" y="430" as="targetPoint" />
+            <mxPoint x="400" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="N_oGtRxf-iCy7ptA4HqI-7" value="Vect" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
-          <mxGeometry x="260" y="520" width="290" height="290" as="geometry" />
+          <mxGeometry x="240" y="520" width="320" height="290" as="geometry" />
         </mxCell>
         <mxCell id="N_oGtRxf-iCy7ptA4HqI-8" value="tam int &#xa;fraccion * componentes" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="N_oGtRxf-iCy7ptA4HqI-7" vertex="1">
-          <mxGeometry y="26" width="290" height="94" as="geometry" />
+          <mxGeometry y="26" width="320" height="94" as="geometry" />
         </mxCell>
         <mxCell id="N_oGtRxf-iCy7ptA4HqI-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="N_oGtRxf-iCy7ptA4HqI-7" vertex="1">
-          <mxGeometry y="120" width="290" height="8" as="geometry" />
+          <mxGeometry y="120" width="320" height="8" as="geometry" />
         </mxCell>
         <mxCell id="N_oGtRxf-iCy7ptA4HqI-10" value="+ vect(): vect&#xa;+ vect(int): vect&#xa;+  +(vect) : vect&#xa;+  -(vect,) : vect&#xa;+  *(vect) : vect&#xa;+  producto(vect) : vect&#xa;+  angulo(vect) : float&#xa;+  magnitud() : float&#xa;+  producto(float) : vect&#xa;+  print() : void" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="N_oGtRxf-iCy7ptA4HqI-7" vertex="1">
-          <mxGeometry y="128" width="290" height="162" as="geometry" />
+          <mxGeometry y="128" width="320" height="162" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
