@@ -80,6 +80,13 @@ fraccion fraccion::suma(fraccion f2){
     return fres;
 }
 
+fraccion fraccion::resta(fraccion f2){
+    int num = numerador * f2.getDenominador() -  denominador * f2.getNumerador();
+    int den = denominador * f2.getDenominador();
+    fraccion fres(num,den);
+    return fres;
+}
+
 fraccion fraccion::multiplicacion(fraccion f2){
     int num = numerador * f2.getNumerador();
     int den = denominador * f2.getDenominador();

@@ -15,6 +15,7 @@ class fraccion
         fraccion operator / (fraccion);
         void reduccion(int &,int &);
         fraccion suma(fraccion);
+        fraccion resta(fraccion);
         fraccion multiplicacion(fraccion);
         void imprimir();
         int getNumerador();
