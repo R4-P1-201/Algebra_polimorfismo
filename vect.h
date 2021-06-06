@@ -10,14 +10,14 @@ class vect : fraccion
         vect();
         vect(int);
         void setComponentes(int,fraccion);
-        vect operator + (vect); //ya
-        vect operator - (vect); //ya
-        fraccion operator * (vect); // ya
-        vect producto(vect); //producto cruz
+        vect operator + (vect);
+        vect operator - (vect);
+        fraccion operator * (vect);
+        vect producto(vect);
         float angulo(vect);
         float magnitud();
         vect producto(float);
-        void print(); //ya
+        void print();
 };
 
 #endif // VECT_H
